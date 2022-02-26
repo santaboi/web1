@@ -1,24 +1,115 @@
+
+
 .container1 {
+    outline: 2px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    /*align-items: baseline ;*/
     /*height: 100%; is 100% of parents*/
     height: 100vh;
     font-size: x-large;
     font-weight: bolder;
     color: #495057;
 }
+.container2 {
+    display: -webkit-flex;
+    display: flex;
+    /*兩個並排display下面會蓋掉上面嗎*/
+    flex-direction: column;
+}
+
+.container3 {
+    outline: 2px solid black;
+    position: absolute;
+    width: calc(120vw/9);
+    height: 30vh;
+    flex-wrap: wrap;
+    top : 30% ;
+}
+
+#l_grids {
+    left: 10.1%;
+}
 
 
-#left {
-    
+#m_grids {
+    left: 43.21%;
+    width: calc(120vw/11);
 }
-#middle {
-    
-}
-#right{
 
+#r_grids {
+    left: 76.4%;
 }
+
+.l_buttons {
+    width: 27%;
+    height: 22%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#l_but1{background-color: #edc4b3;}
+#l_but2{background-color: #e6b8a2;}
+#l_but3{background-color: #deab90;}
+#l_but4{background-color: #d69f7e;}
+#l_but5{background-color: #cd9777;}
+#l_but6{background-color: #c38e70;}
+#l_but7{background-color: #b07d62;}
+#l_but8{background-color: #9d6b53;}
+#l_but9{background-color: #8a5a44;}
+#l_but10{background-color: #774936;}
+#l_but11{background-color: #552f1f;}
+#l_but12{background-color: #3a1a0d;}
+
+.m_buttons{
+    width: 43%;
+    height: 30%;
+    /*margin: 0 , 10px;*/
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#m_but1{background-color: #ff0a54;}
+#m_but2{background-color: #ff5c8a;}
+#m_but3{background-color: #ff99ac;}
+.r_buttons {
+    width: 62%;
+    height: 52%;
+}
+
+
+.item1 {
+    outline: 2px solid black;
+    text-align: center;
+    width: calc(100vw/3);
+    min-width: 300px;
+    height: 100vh;
+}
+
+.text1 {
+    border: 5px solid gray;
+    width: calc(100vw/9);
+    position: absolute;
+    bottom: 5vh;
+    font-size: 28pt;
+}
+#left_text {
+    left: calc(96vw/9);
+}
+
+#mid_text {
+    left : calc(393vw/9);
+    bottom: 12vh;
+}
+
+#right_text{
+    left : calc(691vw/9);
+    bottom: 12vh;
+}
+
 
 #start_page {
     outline: 2px solid black;
@@ -32,6 +123,7 @@
 }
 
 #result {
+
     outline: 2px solid black;
     height: 100vh;
     background-image: url(./img/last.jpg);
