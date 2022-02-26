@@ -1,0 +1,42 @@
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*height: 100%; is 100% of parents*/
+    height: 100vh;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #495057;
+}
+
+
+#left {
+    
+}
+#middle {
+    
+}
+#right{
+
+}
+
+#start_page {
+    outline: 2px solid black;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/first.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom 65% center;
+    z-index: 999;
+}
+
+#result {
+    outline: 2px solid black;
+    height: 100vh;
+    background-image: url(./img/last.jpg);
+    background-size: fill;
+    /*如何解決在滾動縮小時的狀況*/
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
