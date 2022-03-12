@@ -1,0 +1,248 @@
+
+@font-face {
+  font-family: 'Now Alt';
+  src: url(./source/font_source/NowAlt-Medium.otf);
+}
+
+
+* {
+    font-family: 'Now Alt'; 
+    margin : 0 ;
+    padding : 0 ;
+    box-sizing : border-box ;
+}
+
+.container2 {
+    scroll-snap-type : y mandatory ;/*asign scrolling snap type(parents)*/
+    overflow-y : scroll;
+    height: 100vh;/*scrolling?*/
+}
+
+div.item1 {
+    height : 100vh;   
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    color: white; /*text color*/
+    scroll-snap-align: start; /*for scrolling snap at start (children)*/   
+}
+
+
+#one {
+    color : black;
+    background : #f4f4f4;
+
+    background-image: url(./source/img/cover.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: 85% 120%; /* Resize the background image to cover the entire container */
+
+
+
+    display : flex ;
+    /*justify-content: center; 
+    align-items: center;*/
+    flex-direction: column;
+    row-gap: 1.5%;
+    
+}
+#one > * {
+    /*align-items: flex-start;*/
+    font-size: 27pt;
+    font-weight: bolder;
+}
+
+#start_button {
+    margin : 0 0 23% 0;
+    font-size: 22pt;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+
+
+#two {
+    background: rgb(211 , 79 , 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#two > * {
+    flex-basis: 100%; /*direct children of #two will get axact same size*/
+    box-sizing: border-box;
+}
+
+
+.col1 {
+    /*position: relative;*/
+    
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: white;
+    /*center child*/
+    display: flex;
+    justify-content: center;
+    align-items: center; /*左右正中間*/
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    row-gap: 9%;
+
+}
+
+.col2 {
+    /*position: relative;*/
+    background-color: white;
+    height: 100vh;
+    /*center child*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    row-gap: 9%;
+
+}
+
+.col3 {
+    /*position: relative;*/
+    background-color: white;
+    height: 100vh;
+    /*center child*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    row-gap: 9%;
+
+}
+
+.container3{
+    height: 36%;
+    width: 42%; 
+
+    display: flex;
+    flex-wrap: wrap;
+    /*row-gap: 10px;*/
+    gap: 5px 5px;
+}
+
+#left_text {
+    margin: 0 0 3.8% 0;
+}
+
+#l_grids > * {
+    flex : 1 1 32%; /*flex: <'flex-grow'> <'flex-shrink'> <'flex-basis'>*/
+    border-radius: 2px;
+    border: none;
+    cursor:pointer;
+}
+
+#l_but1{background-color: #fdf6f0;}
+#l_but2{background-color: #faecdf;}
+#l_but3{background-color: #f6e7d4;}
+#l_but4{background-color: #faf0e7;}
+#l_but5{background-color: #f8e8d9;}
+#l_but6{background-color: #f3dbc1;}
+#l_but7{background-color: #f3dbc1;}
+#l_but8{background-color: #f3e2d0;}
+#l_but9{background-color: #eacbaf;}
+#l_but10{background-color: #f7ede3;}
+#l_but11{background-color: #f1dbc3;}
+#l_but12{background-color: #e4c0a0;}
+
+.below_container3 {
+    color: black;
+    text-align: center;
+    font-size: 27pt;
+    font-weight: bolder;
+    width: 70%;
+    
+}
+
+
+#m_grids {
+    height: 36%;
+    width: 19%; 
+}
+
+#m_grids > * {
+    flex : 1 1 90%; /*flex: <'flex-grow'> <'flex-shrink'> <'flex-basis'>*/
+    min-width: 75px;
+    border-radius: 2px;
+    border: none;
+    cursor:pointer;
+    /*border: 2px;*/
+}
+
+#m_but1{background-color: #efdcdf;}
+#m_but2{background-color: #e68f97;}
+#m_but3{background-color: #c17883;}
+
+#mid_text {
+    margin: 0 0 15% 0;
+}
+
+#r_grids {
+    height: 35%;
+    width: 25%; 
+}
+#r_grids > * {
+    flex : 1 1 90%;
+    border-radius: 2px;
+    border: none;
+    cursor:pointer;
+}
+
+#r_but1 {
+    background-color: #e68f97;
+    display: flex;
+    justify-content: space-between;
+}
+
+#r_but1 > :nth-child(1){
+    background-color: #e68f97;
+}
+
+#r_but1 > :nth-child(5){
+    background-color: #e68f97;
+}
+
+
+.in_stip {
+    background-color : #c17883;
+    width: 3px;
+    height:100%;
+    
+
+}
+
+#r_but2 {
+    background-color: #e68f97;
+}
+
+#right_text {
+    margin: 0 0 15% 0;  
+}
+#three {
+    background: white;
+    background-image: url(./source/img/last.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100vh;
+}
+
+#result1 {
+    color : #61848f ;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    position: flex;
+    /*can i set a max height??*/
+    margin:  0 0 20% 0 ;
+}

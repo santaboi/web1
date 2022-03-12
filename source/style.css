@@ -1,14 +1,26 @@
-@import url('http://fonts.cdnfonts.com/css/now-alt');
+/*@import url('http://fonts.cdnfonts.com/css/now-alt');
 body {
     font-family: 'Now Alt', sans-serif;
-    border: none;
+    
 }
+*/
+@font-face {
+  font-family: 'Now Alt';
+  src: url(./font_source/NowAlt-Medium.otf);
+}
+*{
+    font-family: 'Now Alt'; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing:border-box; 
 
-button {
-    border: none;
+}
+body {
+    border:
 }
 .container1 {
     /*outline: 2px solid black;*/
+    border-top: 1px solid transparent;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -16,16 +28,19 @@ button {
     /*align-items: baseline ;*/
     /*height: 100%; is 100% of parents*/
     height: 100vh;
+    width: 100vw;
     font-size: x-large;
     font-weight: bolder;
     color: #495057;
     z-index: -999;
+
 }
 .container2 {
     display: -webkit-flex;
     display: flex;
     /*兩個並排display下面會蓋掉上面嗎*/
     flex-direction: column;
+
 }
 
 .container3 {
@@ -35,6 +50,7 @@ button {
     height: 30vh;
     flex-wrap: wrap;
     top : 19% ;
+    
 }
 
 #l_grids {
@@ -73,17 +89,16 @@ button {
     margin: 0;
     cursor: pointer;
     border-radius: 2px;
-    cursor: pointer;
+    border: none;
 }
-.l_buttons:hover {
-    box-shadow: inset 50px 0 0 0 yellow;
-}
+
 .m_buttons{
     width: 60%;
     height: 30.3%;
     /*margin: 0 , 10px;*/
     cursor: pointer;
     border-radius: 2px;
+    border: none;
 }
 
 #m_but1{background-color: #efdcdf;}
@@ -94,6 +109,7 @@ button {
     width: 88%;
     height: 46%;
     background-color: #e68f97;
+    border: none;
 }
 
 #r_but1 {
@@ -118,7 +134,7 @@ button {
 
 .text1 {
     width: calc(100vw/8);
-    position: absolute;
+    position: fixed;
     bottom: 5vh;
     font-size: 28pt;
     text-align: center;
@@ -136,7 +152,7 @@ button {
 
 #mid_text {
     /*left : calc(393vw/9);*/
-    left: 42.72% ;
+    left: 43% ;
     bottom: 32vh;
     border: none;
 
@@ -144,7 +160,7 @@ button {
 
 #right_text{
     /*left : calc(691vw/9);*/
-    left : 77.02% ;
+    left : 77.38% ;
     bottom: 27vh;
 }
 
