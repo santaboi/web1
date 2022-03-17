@@ -208,22 +208,22 @@ div.item1 {
 }
 
 #r_but1 {
-    background-color: #e68f97;
+    background-color: #f4acb7;
     display: flex;
     justify-content: space-between;
 }
 
 #r_but1 > :nth-child(1){
-    background-color: #e68f97;
+    background-color: #f4acb7;
 }
 
 #r_but1 > :nth-child(5){
-    background-color: #e68f97;
+    background-color: #f4acb7;
 }
 
 
 .in_stip {
-    background-color : #c17883;
+    background-color : #e68f97;
     width: 3px;
     height:100%;
     
@@ -231,20 +231,13 @@ div.item1 {
 }
 
 #r_but2 {
-    background-color: #e68f97;
+    background-color: #f4acb7;
 }
 
 #right_text {
     margin: 0 0 15% 0;  
 }
-#three {
-    background: white;
-    background-image: url(./source/img/last.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    height: 100vh;
-}
+
 
 #result1 {
     color : #61848f ;
@@ -256,3 +249,22 @@ div.item1 {
     margin:  0 0 20% 0 ;
     text-decoration: none;
 }
+
+.item1__{
+    height : 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /*text color*/
+
+    background: white;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100vh;
+    background-image: url(./source/img/last.jpg);
+    
+}
+
+
+
