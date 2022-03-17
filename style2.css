@@ -1,3 +1,4 @@
+/*button effect : https://codepen.io/Souleste/pen/wvvjZvx*/
 
 @font-face {
   font-family: 'Now Alt';
@@ -12,18 +13,24 @@
     box-sizing : border-box ;
 }
 
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
+
 .container2 {
+    /*scroll snap (temp delete)*/
     scroll-snap-type : y mandatory ;/*asign scrolling snap type(parents)*/
     overflow-y : scroll;
+    /*
     height: 100vh;/*scrolling?*/
 }
 
 div.item1 {
     height : 100vh;   
-    display: flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: white; /*text color*/
+    /* scroll snap (temp delete)*/
     scroll-snap-align: start; /*for scrolling snap at start (children)*/   
 }
 
@@ -40,8 +47,8 @@ div.item1 {
 
 
     display : flex ;
-    /*justify-content: center; 
-    align-items: center;*/
+    justify-content: center; 
+    align-items: center;
     flex-direction: column;
     row-gap: 1.5%;
     
@@ -51,6 +58,8 @@ div.item1 {
     font-size: 27pt;
     font-weight: bolder;
 }
+
+
 
 #start_button {
     margin : 0 0 23% 0;
@@ -62,7 +71,7 @@ div.item1 {
 
 
 #two {
-    background: rgb(211 , 79 , 79);
+    background: white(211 , 79 , 79);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +251,8 @@ div.item1 {
     font-size: 45px;
     font-weight: 700;
     text-align: center;
-    position: flex;
+    display: flex;
     /*can i set a max height??*/
     margin:  0 0 20% 0 ;
+    text-decoration: none;
 }

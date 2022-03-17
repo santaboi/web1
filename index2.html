@@ -5,15 +5,13 @@
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <title>Dope lipstick recommender</title>
         <link rel="stylesheet" href="style2.css" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <!-- <script>window.scrollY(1000)</script>-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+        <!-- <script src="js/choose_n_scroll.js"></script> -->
     </head>
     <body>
         <div class="container2">
-            <div class = "item1" id="one">
-                <p id="start_text">LIPSPICK</p>
-                <button id="start_button">Pick your lipstick now.</button>
-            </div>
             <div class = "item1" id = "two">
                 <div class="col1" id="left">
                     <section class="container3" id="l_grids">
@@ -35,7 +33,7 @@
                             YOUR<br />
                             SKIN COLOR<br />
                             IS<br />
-                            WARM AND DARK
+                            <p id="skin_staus">      </p>
                         </p>
                     </section>
                 </div>
@@ -47,7 +45,10 @@
                     </section>
                     <section class="below_container3" id="mid_text">
                         <p >YOUR<br />
-                            LIPS COLOR
+                            LIPS COLOR<br />
+                            IS<br />
+                            <p id="lips_color">       </p>
+                            
                         </p>
                     </section>
                 </div>
@@ -59,23 +60,36 @@
                             <div class = "in_stip"></div>
                             <div class = "in_stip"></div>
                             <div class="in_stip"></div>
-
+                            
                         </button>
                         <button class="r_buttons" id="r_but2"></button>
                     </section>
                     <section class="below_container3" id="right_text">
                         <p >YOUR<br />
-                            LIPS CONDITION
+                            LIPS CONDITION<br />
+                            IS<br />
+                            <p id="lips_condition">      </p>
                         </p>  
                     </section>
                     
                 </div>
             </div>
+            <div class = "item1" id="one">
+                    <p id="start_text">LIPSPICK</p>
+                    <button class = "btn" id="start_button">Pick your lipstick now.</button>
+            </div>
             <div class = "item1" id = "three">
-                <h1 id="result1">ROMAND ZERO VELVET TINT <br />
-                    #22 GRAIN NUDE</h1>
+                <!--<h1 id="result1">ROMAND ZERO VELVET TINT <br />
+                    #22 GRAIN NUDE</h1> -->
+                <a id="result1" href="https://sukoshimart.com/products/romand-zero-velvet-tint-vintage-filter" target="_blank">ROMAND ZERO VELVET TINT <br />
+                #22 GRAIN NUDE</a>
             </div>
         </div>
-        
+        <script src="js/start_btn2.js"></script>
+        <script type="text/javascript" src="js/pagescroll.js"></script>
+        <script type="text/javascript" src="js/change_color.js"></script>
+        <script type="text/javascript" src="js/change_clolor(jq).js"></script>
+        <script type="text/javascript" src = "js/start_btn_jump.js"></script>
+        <script type="text/javascript" src="js/change_text.js"></script>
     </body>
 </html>
